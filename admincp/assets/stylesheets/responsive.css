@@ -1,0 +1,2140 @@
+			/*
+--------------------------------------------------------------------------------------------
+			********************** MAX WIDTH 480PX
+--------------------------------------------------------------------------------------------
+			*/
+
+
+
+@media only screen and (max-width: 480px) {
+	.inner-toolbar .nav-pills a {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+			/*
+--------------------------------------------------------------------------------------------
+			********************** MIN WIDTH 768PX
+--------------------------------------------------------------------------------------------
+			*/
+
+/* Layout Base - Sidebar Left Opened ( Larger than mobile ) - Responsive */
+@media only screen and (min-width: 768px) {
+	html.sidebar-left-collapsed .sidebar-left {
+		width: 73px;
+	}
+
+	html.sidebar-right-opened .header {
+		margin-left: -300px;
+		margin-right: 300px;
+	}
+
+	html.sidebar-right-opened .inner-wrapper {
+		margin-left: -300px;
+	}
+
+	html.sidebar-right-opened .sidebar-right {
+		margin-right: 0;
+	}
+
+	html.flexbox .inner-wrapper,
+	html.flexboxlegacy .inner-wrapper {
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	html.flexbox .sidebar-left,
+	html.flexbox .content-body,
+	html.flexboxlegacy .sidebar-left,
+	html.flexboxlegacy .content-body {
+		display: block;
+		-webkit-flex-shrink: 0;
+		-moz-flex-shrink: 0;
+		flex-shrink: 0;
+		-ms-flex-negative: 0;
+	}
+
+	html.flexbox .content-body,
+	html.flexboxlegacy .content-body {
+		-webkit-box-flex: 2;
+		-moz-box-flex: 2;
+		box-flex: 2;
+		-webkit-flex: 2;
+		-moz-flex: 2;
+		-ms-flex: 2;
+		flex: 2;
+	}
+	html.fixed .inner-wrapper,
+	html.fixed .sidebar-left,
+	html.fixed .content-body {
+		display: block;
+	}
+
+	/* Layout Fixed - Header */
+	html.fixed .header {
+		position: fixed;
+		z-index: 1020;
+	}
+
+	/* Layout Fixed - Inner Wrapper */
+	html.fixed .inner-wrapper {
+		padding-top: 110px;
+	}
+
+	/* Layout Fixed - Content Body */
+	html.fixed .content-body {
+		margin-left: 300px;
+	}
+
+	html.fixed .content-body.has-toolbar {
+		padding-top: 92px;
+	}
+
+	/* Layout Fixed - Page header */
+	html.fixed .page-header {
+		left: 300px;
+		margin: 0;
+		position: fixed;
+		right: 0;
+		top: 60px;
+	}
+
+	/* Layout Fixed - Sidebar Left */
+	html.fixed .sidebar-left {
+		bottom: 0;
+		left: 0;
+		padding-bottom: 50px;
+		position: fixed;
+		top: 60px;
+	}
+
+	html.fixed .sidebar-left .nano-content {
+		padding-bottom: 50px;
+	}
+
+	/* Layout Fixed - Sidebar Left Collapsed */
+	html.fixed.sidebar-left-collapsed .page-header {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-collapsed .content-body {
+		margin-left: 73px;
+	}
+
+	/* Layout Fixed - Sidebar Right Opened */
+	html.fixed.sidebar-right-opened .page-header {
+		left: 0;
+		margin-right: 300px;
+	}
+
+	html.fixed.sidebar-right-opened .sidebar-left {
+		left: -300px;
+	}
+
+	/* Layout Fixed - Sidebar Left Collapsed & Sidebar Right Opened */
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened .page-header {
+		left: -300px;
+	}
+
+	/* Content With Menu - Boxed Layout Fixing Spacement on Bottom */
+	html.boxed .content-with-menu {
+		margin-bottom: -40px;
+	}
+	/* Content With Menu - Container */
+	.content-with-menu-container {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+	/* Content With Menu - Menu Faux Column for Scroll and Boxed Layouts */
+	html.scroll .content-with-menu:before,
+	html.boxed .content-with-menu:before {
+		bottom: -47px;
+		content: '';
+		display: block;
+		left: 0;
+		position: absolute;
+		top: 54px;
+		width: 300px;
+	}
+
+	html.scroll .content-with-menu:after,
+	html.boxed .content-with-menu:after {
+		bottom: -46px;
+		content: '';
+		display: block;
+		left: -1px;
+		position: absolute;
+		top: 54px;
+		width: 1px;
+		z-index: 3;
+	}
+
+	html.boxed .content-with-menu:before {
+		bottom: 0;
+	}
+
+	html.boxed .content-with-menu:after {
+		bottom: 2px;
+	}
+	/* Content With Menu - Menu and Body */
+	.content-with-menu {
+		border-top: 110px solid transparent;
+		margin: -150px -40px -53px -40px;
+		min-height: 100vh;
+	}
+
+	.inner-menu {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	.inner-body {
+		display: table-cell;
+		vertical-align: top;
+		padding: 40px;
+	}
+
+	.inner-toolbar {
+		height: 52px;
+		overflow: hidden;
+	}
+
+	.content-with-menu-has-toolbar .inner-menu-toggle {
+		border-radius: 0;
+	}
+
+	.content-with-menu-has-toolbar .inner-toolbar {
+		padding-left: 140px;
+	}
+
+	 /*Content With Menu - Flexbox supported */
+	 html.flexbox .content-with-menu-container,
+	html.flexboxlegacy .content-with-menu-container {
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	html.flexbox .inner-menu,
+	html.flexbox .inner-body,
+	html.flexboxlegacy .inner-menu,
+	html.flexboxlegacy .inner-body {
+		display: block;
+		-webkit-flex-shrink: 0;
+		-moz-flex-shrink: 0;
+		flex-shrink: 0;
+		-ms-flex-negative: 0;
+	}
+
+	html.flexbox .inner-body,
+	html.flexboxlegacy .inner-body {
+		-webkit-box-flex: 2;
+		-moz-box-flex: 2;
+		box-flex: 2;
+		-webkit-flex: 2;
+		-moz-flex: 2;
+		-ms-flex: 2;
+		flex: 2;
+	}
+	/* Content With Menu + Layout Fixed */
+	html.fixed .content-with-menu-container,
+	html.fixed .inner-menu,
+	html.fixed .inner-body {
+		display: block;
+	}
+
+	html.fixed .content-with-menu-container {
+		position: relative;
+	}
+
+	html.fixed .inner-menu-toggle {
+		position: absolute;
+		top: 114px;
+		border-radius: 0 0 5px 0;
+		width: 140px;
+		z-index: 1002;
+	}
+
+	html.fixed .inner-menu {
+		bottom: 0;
+		display: block;
+		left: 300px;
+		position: fixed;
+		margin: 0;
+		top: 114px;
+		width: 300px;
+		padding: 35px;
+		z-index: 1002;
+	}
+
+	html.fixed .inner-menu-content {
+		display: block;
+	}
+
+	html.fixed .inner-body {
+		margin-left: 300px;
+		border-top: 113px solid transparent;
+		margin-top: -110px;
+		min-height: 100vh;
+		position: relative;
+	}
+
+	html.fixed .content-with-menu-has-toolbar .inner-body {
+		border-top-width: 165px;
+	}
+	/* Content With Menu + Layout Scroll & Boxed */
+	html.scroll .inner-menu,
+	html.scroll .inner-body,
+	html.boxed .inner-menu,
+	html.boxed .inner-body {
+		display: block;
+	}
+
+	html.scroll .content-with-menu-container,
+	html.boxed .content-with-menu-container {
+		position: relative;
+	}
+
+	html.scroll .inner-menu-toggle,
+	html.boxed .inner-menu-toggle {
+		position: absolute;
+		top: 0;
+		border-radius: 0 0 5px 0;
+		width: 140px;
+		z-index: 3;
+	}
+
+	html.scroll .inner-menu,
+	html.boxed .inner-menu {
+		display: block;
+		position: relative;
+		margin: 0;
+		width: 300px;
+		padding: 35px;
+	}
+
+	html.scroll .inner-menu-content,
+	html.boxed .inner-menu-content {
+		display: block;
+	}
+
+	html.scroll .inner-body,
+	html.boxed .inner-body {
+		margin-left: 0;
+		min-height: 100vh;
+		position: relative;
+	}
+
+	html.scroll.flexbox .content-with-menu-container, html.scroll.flexboxlegacy .content-with-menu-container,
+	html.boxed.flexbox .content-with-menu-container,
+	html.boxed.flexboxlegacy .content-with-menu-container {
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	/* Content With Menu + Layout Fixed + Sidebar Left Collapsed */
+	html.fixed.sidebar-left-collapsed .inner-menu,
+	html.fixed.sidebar-left-collapsed .inner-menu-toggle,
+	html.fixed.sidebar-left-collapsed .inner-toolbar {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-toolbar {
+		left: 373px;
+	}
+	/* Content With Menu + Layout Fixed + Sidebar Right Opened */
+	html.fixed.sidebar-right-opened .inner-menu,
+	html.fixed.sidebar-right-opened .inner-menu-toggle,
+	html.fixed.sidebar-right-opened .inner-toolbar {
+		left: 0px;
+	}
+
+	html.fixed.sidebar-right-opened .inner-toolbar {
+		margin-right: 300px;
+	}
+
+	html.fixed.sidebar-right-opened.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-right-opened.inner-menu-opened .inner-toolbar {
+		left: -300px;
+	}
+	/* Content With Menu + Layout Fixed + Sidebar Left Collapsed + Sidebar Right Opened */
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened .inner-menu,
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened .inner-toolbar {
+		left: -227px;
+	}
+
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .inner-toolbar {
+		left: -527px;
+	}
+	/* Unstyle nano for non fixed layouts */
+	html.scroll .sidebar-left .nano,
+	html.boxed .sidebar-left .nano {
+		position: static;
+		height: auto;
+		overflow: visible;
+		width: auto;
+	}
+
+	html.scroll .sidebar-left .nano .nano-content,
+	html.boxed .sidebar-left .nano .nano-content {
+		margin-right: 0 !important;
+		position: static;
+		overflow: visible;
+	}
+
+	html.scroll .sidebar-left .nano .nano-pane,
+	html.boxed .sidebar-left .nano .nano-pane {
+		display: none !important;
+	}
+
+	html.boxed .sidebar-left .nano > .nano-content,
+	html.scroll .sidebar-left .nano > .nano-content {
+		overflow: visible !important;
+	}
+	html.sidebar-left-collapsed .sidebar-left .sidebar-title {
+		margin-left: -300px;
+		opacity: 0;
+	}
+
+	html.sidebar-left-collapsed .sidebar-left .sidebar-toggle {
+		border-radius: 0;
+	}
+
+	html.sidebar-left-collapsed .sidebar-left .nav-main > li > a {
+		overflow: hidden;
+		text-overflow: clip;
+	}
+
+	html.sidebar-left-collapsed .sidebar-left .nav-main li.nav-parent a:after {
+		display: none;
+	}
+
+	html.sidebar-left-collapsed .sidebar-left .nav-main li.nav-parent ul.nav-children {
+		display: none;
+	}
+
+	html.sidebar-left-collapsed .sidebar-left .nav-main a span {
+		visibility: hidden;
+	}
+
+	html.sidebar-left-collapsed .sidebar-left .sidebar-widget,
+	html.sidebar-left-collapsed .sidebar-left .separator {
+		display: none;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left, html.sidebar-left-collapsed.boxed .sidebar-left {
+		overflow: visible;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main li.nav-active a:hover, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main li.nav-active a:hover {
+		color: #cccccc;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main li.nav-expanded, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main li.nav-expanded {
+		background: transparent;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main li.nav-expanded ul.nav-children, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main li.nav-expanded ul.nav-children {
+		display: none;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main li ul.nav-children, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main li ul.nav-children {
+		position: absolute;
+		left: 67px;
+		width: 233px;
+		background: #191c21;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main > li:hover, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main > li:hover {
+		width: 300px;
+		background: #191c21;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main > li:hover > a, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main > li:hover > a {
+		background: transparent;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main > li:hover > a i, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main > li:hover > a i {
+		margin-right: 22px;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main > li:hover > a span, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main > li:hover > a span {
+		display: inline;
+		visibility: visible;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main > li:hover > a span.label, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main > li:hover > a span.label {
+		background-color: #cccccc;
+		color: white;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main > li:hover > ul.nav-children, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main > li:hover > ul.nav-children {
+		display: block;
+	}
+
+	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main > li:hover > ul.nav-children li a, html.sidebar-left-collapsed.boxed .sidebar-left .nav-main > li:hover > ul.nav-children li a {
+		padding-left: 15px;
+	}
+
+	html.sidebar-left-collapsed.fixed .sidebar-left .nano {
+		background: #1d2127;
+		box-shadow: -5px 0 0 #2f3139 inset;
+	}
+
+	html.sidebar-left-collapsed.fixed .sidebar-left .nano:hover {
+		width: 300px;
+	}
+
+	html.sidebar-left-collapsed.fixed .sidebar-left .nano:hover .nav-main .nav-expanded ul.nav-children {
+		display: block;
+	}
+
+	html.sidebar-left-collapsed.fixed .sidebar-left .nano:hover .nav-main li.nav-parent a:after {
+		display: inline-block;
+	}
+
+	html.sidebar-left-collapsed.fixed .sidebar-left .nano:hover .nav-main li a span {
+		visibility: visible;
+	}
+
+	html.sidebar-left-collapsed.fixed .sidebar-left .nano:hover .sidebar-widget,
+	html.sidebar-left-collapsed.fixed .sidebar-left .nano:hover .separator {
+		display: block;
+	}
+
+	/* Layout Base - Sidebar Left */
+	html.sidebar-left-sm .sidebar-left {
+		width: 250px;
+		font-size: 12px;
+		font-size: 1.2rem;
+	}
+
+	html.sidebar-left-sm .sidebar-left ul.nav-main li i {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+
+	html.sidebar-left-sm .sidebar-left ul.nav-main li a {
+		font-size: 12px;
+		font-size: 1.2rem;
+	}
+
+	html.sidebar-left-sm .sidebar-left .sidebar-widget .widget-header h6 {
+		font-size: 12px;
+		font-size: 1.2rem;
+	}
+
+	html.sidebar-left-sm.sidebar-left-collapsed .sidebar-left .sidebar-title {
+		margin-left: -250px;
+	}
+
+	html.sidebar-left-sm.sidebar-left-collapsed.fixed .sidebar-left .nano:hover {
+		width: 250px;
+	}
+
+	/* Layout Base - Sidebar Left Opened ( Larger than mobile ) */
+	html.sidebar-left-sm.sidebar-left-collapsed .sidebar-left {
+		width: 73px;
+	}
+
+	/* Layout Fixed - Content Body */
+	html.fixed.sidebar-left-sm .content-body {
+		margin-left: 250px;
+	}
+
+	/* Layout Fixed - Page header */
+	html.fixed.sidebar-left-sm .page-header {
+		left: 250px;
+	}
+
+	/* Layout Fixed - Sidebar Right Opened */
+	html.fixed.sidebar-left-sm.sidebar-right-opened .page-header {
+		left: 0;
+	}
+
+	html.fixed.sidebar-left-sm.sidebar-right-opened .sidebar-left {
+		left: -250px;
+	}
+
+	/* Layout Fixed - Sidebar Left Collapsed */
+	html.fixed.sidebar-left-collapsed .page-header {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-collapsed .content-body {
+		margin-left: 73px;
+	}
+
+	/* Layout Fixed - Sidebar Left Collapsed & Sidebar Right Opened */
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.sidebar-right-opened .page-header {
+		left: -250px;
+	}
+
+	/* Content With Menu + Layout Fixed */
+	html.fixed.sidebar-left-sm .inner-menu {
+		left: 250px;
+	}
+
+	/* Content With Menu + Layout Fixed + Sidebar Left Collapsed */
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed .inner-menu,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed .inner-menu-toggle,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed .inner-toolbar {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.inner-menu-opened .inner-toolbar {
+		left: 373px;
+	}
+
+	/* Content With Menu + Layout Fixed + Sidebar Right Opened */
+	html.fixed.sidebar-left-sm.sidebar-right-opened .inner-menu,
+	html.fixed.sidebar-left-sm.sidebar-right-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-sm.sidebar-right-opened .inner-toolbar {
+		left: -50px;
+	}
+
+	html.fixed.sidebar-left-sm.sidebar-right-opened.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-sm.sidebar-right-opened.inner-menu-opened .inner-toolbar {
+		left: -350px;
+	}
+
+	/* Content With Menu - Toolbar + Layout Fixed */
+	html.fixed.sidebar-left-sm.inner-menu-opened {
+		left: 550px;
+	}
+
+	html.fixed.sidebar-left-sm .inner-menu-toggle {
+		left: 250px;
+	}
+	/* Layout Base - Sidebar Left */
+	html.sidebar-left-xs .sidebar-left {
+		width: 200px;
+		font-size: 11px;
+		font-size: 1.1rem;
+	}
+
+	html.sidebar-left-xs .sidebar-left ul.nav-main li i {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+
+	html.sidebar-left-xs .sidebar-left ul.nav-main li a {
+		font-size: 11px;
+		font-size: 1.1rem;
+	}
+
+	html.sidebar-left-xs .sidebar-left ul.nav-main li .nav-children li a {
+		padding-left: 52px;
+	}
+
+	html.sidebar-left-xs .sidebar-left .sidebar-widget .widget-header h6 {
+		font-size: 11px;
+		font-size: 1.1rem;
+	}
+
+	html.sidebar-left-xs.sidebar-left-collapsed .sidebar-left .sidebar-title {
+		margin-left: -200px;
+	}
+
+	html.sidebar-left-xs.sidebar-left-collapsed.fixed .sidebar-left .nano:hover {
+		width: 200px;
+	}
+
+	/* Layout Base - Sidebar Left Opened ( Larger than mobile ) */
+	html.sidebar-left-xs.sidebar-left-collapsed .sidebar-left {
+		width: 73px;
+	}
+
+	/* Layout Fixed - Content Body */
+	html.fixed.sidebar-left-xs .content-body {
+		margin-left: 200px;
+	}
+
+	/* Layout Fixed - Page header */
+	html.fixed.sidebar-left-xs .page-header {
+		left: 200px;
+	}
+
+	/* Layout Fixed - Sidebar Right Opened */
+	html.fixed.sidebar-left-xs.sidebar-right-opened .page-header {
+		left: 0;
+	}
+
+	html.fixed.sidebar-left-xs.sidebar-right-opened .sidebar-left {
+		left: -200px;
+	}
+
+	/* Layout Fixed - Sidebar Left Collapsed */
+	html.fixed.sidebar-left-collapsed .page-header {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-collapsed .content-body {
+		margin-left: 73px;
+	}
+
+	/* Layout Fixed - Sidebar Left Collapsed & Sidebar Right Opened */
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.sidebar-right-opened .page-header {
+		left: -200px;
+	}
+
+	/* Content With Menu + Layout Fixed */
+	html.fixed.sidebar-left-xs .inner-menu {
+		left: 200px;
+	}
+
+	/* Content With Menu + Layout Fixed + Sidebar Left Collapsed */
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed .inner-menu,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed .inner-menu-toggle,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed .inner-toolbar {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.inner-menu-opened .inner-toolbar {
+		left: 373px;
+	}
+
+	/* Content With Menu + Layout Fixed + Sidebar Right Opened */
+	html.fixed.sidebar-left-xs.sidebar-right-opened .inner-menu,
+	html.fixed.sidebar-left-xs.sidebar-right-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-xs.sidebar-right-opened .inner-toolbar {
+		left: -100px;
+	}
+
+	html.fixed.sidebar-left-xs.sidebar-right-opened.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-xs.sidebar-right-opened.inner-menu-opened .inner-toolbar {
+		left: -400px;
+	}
+
+	/* Content With Menu - Toolbar + Layout Fixed */
+	html.fixed.sidebar-left-xs.inner-menu-opened {
+		left: 500px;
+	}
+
+	html.fixed.sidebar-left-xs .inner-menu-toggle {
+		left: 200px;
+	}
+
+	/* Content With Menu - Menu Faux Column for Scroll and Boxed Layouts Colors */
+	html.scroll .content-with-menu:before,
+	html.boxed .content-with-menu:before {
+		background: #1d2127;
+	}
+
+	html.scroll .content-with-menu:after,
+	html.boxed .content-with-menu:after {
+		background: #000;
+		box-shadow: 0px 0 4px 2px rgba(0, 0, 0, 0.5);
+	}
+
+	/* Fix padding when fixed */
+	html.fixed .inner-menu {
+		padding: 0;
+	}
+
+	html.fixed .inner-menu .nano-content {
+		padding: 35px;
+	}
+
+	html.fixed .inner-menu .nano-content:after {
+		display: block;
+		content: '';
+		height: 35px;
+	}
+	/* Content With Menu - Toolbar + Layout Fixed */
+
+	html.fixed.inner-menu-opened {
+		left: 600px;
+	}
+
+	html.fixed .inner-menu-toggle {
+		position: fixed;
+		left: 300px;
+	}
+	html.overflowscrolling.fixed .sidebar-left .nano,
+	html.overflowscrolling.fixed .sidebar-right .nano,
+	html.overflowscrolling.fixed .inner-menu .nano {
+		height: 100%;
+		overflow: hidden;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	html.overflowscrolling.fixed .sidebar-left .nano > .nano-pane > .nano-slider,
+	html.overflowscrolling.fixed .sidebar-right .nano > .nano-pane > .nano-slider,
+	html.overflowscrolling.fixed .inner-menu .nano > .nano-pane > .nano-slider {
+		visibility: visible;
+	}
+
+	html.overflowscrolling.fixed.custom-scroll .sidebar-left .nano > .nano-content,
+	html.overflowscrolling.fixed.custom-scroll .sidebar-right .nano > .nano-content,
+	html.overflowscrolling.fixed.custom-scroll .inner-menu .nano > .nano-content {
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	/* Toolbar + Layout Fixed */
+	html.fixed .inner-toolbar {
+		left: 300px;
+		right: 0;
+		margin: 0;
+		padding: 0;
+		position: fixed;
+		top: 114px;
+		z-index: 1001;
+	}
+}
+
+/*
+--------------------------------------------------------------------------------------------
+			********************** MAX WIDTH 1199PX
+--------------------------------------------------------------------------------------------
+			*/
+
+@media only screen and (max-width: 1199px) {
+	html.boxed .header {
+		border-color: #cccccc;
+	}
+}
+
+
+			/*
+--------------------------------------------------------------------------------------------
+			********************** MAX WIDTH 767PX
+--------------------------------------------------------------------------------------------
+			*/
+/* Content With Menu - Responsive */
+@media only screen and (max-width: 767px) {
+	/* Layout Mobile - Sidebar Left Collapsed & Sidebar Right Opened */
+	html.sidebar-left-sm.sidebar-left-collapsed.sidebar-right-opened .sidebar-left {
+		margin-left: -250px;
+	}
+	.content-with-menu {
+		clear: both;
+	}
+
+	.inner-body {
+		padding: 40px 15px 0;
+	}
+	html,
+	body {
+		background: #ecedf0;
+	}
+
+	html.mobile-device .sidebar-left,
+	html.mobile-device .sidebar-right {
+		overflow-y: scroll;
+		overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	body {
+		min-height: 100vh;
+	}
+
+	.inner-wrapper,
+	.sidebar-left,
+	.content-body {
+		display: block;
+	}
+
+	.body {
+		min-height: 0;
+		overflow: visible;
+	}
+
+	.header {
+		background: none;
+		border: none;
+		height: auto;
+		position: static;
+	}
+
+	.header .logo-container {
+		height: 60px;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 99;
+	}
+
+	.header .header-right {
+		background: #FFF;
+		float: none !important;
+		height: 60px;
+		margin-top: 60px;
+		width: 100%;
+	}
+
+	.inner-wrapper {
+		min-height: 0;
+		padding-top: 0;
+	}
+
+	.content-body {
+		padding: 0 15px 15px;
+	}
+
+	.page-header {
+		margin: 0 -15px 20px;
+	}
+
+	.sidebar-left {
+		bottom: 0;
+		left: -100%;
+		min-height: 0;
+		min-width: 100%;
+		min-width: 100vw;
+		padding-top: 60px;
+		padding-bottom: 50px;
+		position: fixed;
+		overflow: hidden;
+		top: 0;
+		z-index: 98 !important;
+	}
+
+	.sidebar-right {
+		bottom: 0;
+		left: auto;
+		right: -100%;
+		min-height: 0;
+		margin-right: 0;
+		min-width: 100%;
+		min-width: 100vw;
+		top: 0;
+		z-index: 100;
+	}
+
+	html.csstransforms .sidebar-left,
+	html.csstransforms .sidebar-right {
+		/* performs better but native android browser
+		has problems with translate and percentage
+		@include transition-property(transform);
+		*/
+		-webkit-transition-property: margin;
+		-moz-transition-property: margin;
+		transition-property: margin;
+		-webkit-transition-duration: 0.25s;
+		-moz-transition-duration: 0.25s;
+		transition-duration: 0.25s;
+		-webkit-transition-timing-function: ease-out;
+		-moz-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+		-webkit-transition-delay: 0;
+		-moz-transition-delay: 0;
+		transition-delay: 0;
+	}
+
+	html.csstransforms .sidebar-left {
+		/* performs better but native android browser
+		has problems with translate and percentage
+		@include transform( translateX(0) );
+		*/
+		margin-left: -25px;
+	}
+
+	html.csstransforms .sidebar-right {
+		/* performs better but native android browser
+		has problems with translate and percentage
+		@include transform( translateX(0) );
+		*/
+		margin-right: -25px;
+	}
+
+	/* If desktop is seeing mobile res, fix scrollbars */
+	html.no-mobile-device body {
+		min-height: 0;
+	}
+
+	html.no-mobile-device .body {
+		min-height: 100vh;
+		overflow: hidden;
+	}
+
+	html.no-mobile-device .inner-wrapper {
+		overflow-y: auto;
+	}
+
+	html.no-mobile-device.sidebar-left-opened, html.no-mobile-device.sidebar-left-opened body, html.no-mobile-device.sidebar-right-opened, html.no-mobile-device.sidebar-right-opened body {
+		overflow: hidden;
+	}
+
+	/* Layout Mobile - Sidebar Left Opened */
+	html.sidebar-left-opened.no-csstransforms .sidebar-left {
+		left: 0;
+	}
+
+	html.sidebar-left-opened.csstransforms .sidebar-left {
+		/* performs better but native android browser
+		has problems with translate and percentage
+		@include transform( translateX(100%) );
+		*/
+		margin-left: 100%;
+	}
+
+	/* Layout Mobile - Sidebar Right Opened */
+	html.sidebar-right-opened.no-csstransforms .sidebar-right {
+		right: 0;
+	}
+
+	html.sidebar-right-opened.csstransforms .sidebar-right {
+		/* performs better but native android browser
+		has problems with translate and percentage
+		@include transform( translateX(-100%) );
+		*/
+		margin-right: 100%;
+	}
+
+	/* Layout Mobile - Sidebar Left Collapsed & Sidebar Right Opened */
+	html.sidebar-left-collapsed.sidebar-right-opened .sidebar-left {
+		margin-left: -300px;
+	}
+
+	/* Header Mobile */
+	.header .logo-container {
+		background-color: #f6f6f6;
+		background-image: -webkit-linear-gradient(#f6f6f6 0%, white 45%);
+		background-image: linear-gradient(#f6f6f6 0%, white 45%);
+		border-bottom: 1px solid #E9E9E6;
+		border-top: 3px solid #EDEDED;
+	}
+
+	.header .logo-container .logo {
+		float: none;
+		display: inline-block;
+		line-height: 57px;
+		margin-top: 0;
+	}
+
+	.header .search,
+	.header .separator {
+		display: none;
+	}
+
+	/* Header Dark */
+	html.dark .header .logo-container,
+	html.header-dark .header .logo-container {
+		background: #1d2127;
+		border-bottom-color: #161a1e;
+		border-top-color: #1d2127;
+	}
+
+	html.dark .header .header-right,
+	html.header-dark .header .header-right {
+		background: #1d2127;
+	}
+	/* Layout Mobile - Sidebar Left Collapsed & Sidebar Right Opened */
+	html.sidebar-left-xs.sidebar-left-collapsed.sidebar-right-opened .sidebar-left {
+		margin-left: -200px;
+	}
+	/* If desktop is seeing mobile res, fix scrollbars */
+	html.no-mobile-device.custom-scroll .sidebar-right .nano > .nano-content {
+		overflow: scroll;
+		overflow-x: hidden;
+	}
+	/* Content With Menu - Responsive */
+	.inner-menu .hidden-xs-inline {
+		display: none;
+	}
+
+	.inner-menu .inner-menu-content {
+		padding: 20px;
+	}
+
+	.inner-menu-toggle-inside {
+		margin: 0;
+	}
+	/* Page Header - Mobile */
+	.page-header {
+		padding-right: 80px;
+	}
+
+	.page-header .breadcrumbs {
+		display: none;
+	}
+
+	.page-header h2 {
+		font-size: 16px;
+		padding: 0 15px 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		max-width: 100%;
+	}
+
+	.page-header .sidebar-right-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	html.no-overflowscrolling .nano > .nano-content {
+		overflow: scroll !important;
+		overflow-x: hidden !important;
+	}
+
+	/* Notifications Mobile */
+	.notifications {
+		float: right;
+		margin: 16px 8px 0 0;
+	}
+
+	.notifications > li {
+		position: static;
+	}
+
+	.notifications > li.open .notification-icon:before {
+		display: block;
+	}
+
+	.notifications > li .notification-menu {
+		left: 15px;
+		right: 15px;
+		top: auto;
+		width: auto !important;
+	}
+
+	.notifications > li .notification-menu:before {
+		display: none;
+	}
+	/* Userbox - Mobile */
+	.userbox {
+		float: left;
+		margin: 16px 0 0 12px;
+		position: relative;
+	}
+
+	.userbox:after {
+		background: #E9E9E6;
+		content: '';
+		height: 63px;
+		margin: 0;
+		position: absolute;
+		right: -21px;
+		top: -18px;
+		width: 1px;
+	}
+
+	.userbox .profile-picture {
+		display: none;
+	}
+
+	.userbox.open .dropdown-menu {
+		left: -5px;
+		padding: 43px 0 0 0;
+	}
+
+	.panel-actions {
+		float: none;
+		margin-bottom: 15px;
+		position: static;
+		text-align: right;
+	}
+
+	.panel-actions a {
+		vertical-align: top;
+	}
+	/* Notification Responsive */
+	html > body > .ui-pnotify {
+		bottom: auto !important;
+		left: 0 !important;
+		margin: 0 !important;
+		right: 0 !important;
+		top: 60px !important;
+		width: auto !important;
+	}
+
+	html > body > .ui-pnotify .notification {
+		border-radius: 0 !important;
+		height: auto !important;
+		position: static !important;
+		width: 100%;
+	}
+
+	html > body > .ui-pnotify .notification .ui-pnotify-title,
+	html > body > .ui-pnotify .notification .ui-pnotify-text {
+		padding-right: 35px !important;
+	}
+
+	html > body > .ui-pnotify .notification .ui-pnotify-sticker {
+		display: none !important;
+	}
+
+	html > body > .ui-pnotify .notification .ui-pnotify-closer {
+		display: block !important;
+		font-size: 24px !important;
+		visibility: visible !important;
+	}
+}
+
+
+
+			/*
+--------------------------------------------------------------------------------------------
+			********************** MIN WIDTH 1200PX
+--------------------------------------------------------------------------------------------
+			*/
+/* Layout Boxed - larger or equal min width */
+@media only screen and (min-width: 1200px) {
+	/* Layout Boxed - Body Tag */
+	html.boxed body {
+		background: url(../images/patterns/denim.png) repeat;
+	}
+
+	/* Layout Boxed - Main Wrapper */
+	html.boxed .body {
+		position: relative;
+		max-width: 1200px;
+		margin: 0 auto;
+		background-color: transparent;
+	}
+
+	/* Layout Boxed - Header */
+	html.boxed .header {
+		border-top: 3px solid #cccccc;
+		height: 63px;
+		position: absolute;
+		top: 25px;
+	}
+
+	/* Layout Boxed - Inner Wrapper */
+	html.boxed .inner-wrapper {
+		padding-top: 88px;
+		padding-bottom: 25px;
+	}
+
+	/* Layout Boxed - Content Body */
+	html.boxed .content-body {
+		background-color: #ecedf0;
+	}
+
+	/* Layout Boxed - Border Radius */
+	html.boxed .header {
+		border-radius: 5px 5px 0 0;
+	}
+
+	html.boxed .sidebar-left {
+		border-radius: 0 0 0 5px;
+	}
+
+	html.boxed .content-body {
+		border-radius: 0 0 5px 0;
+	}
+
+	html.boxed .sidebar-right {
+		border-radius: 0 5px 5px 0;
+	}
+
+	/* Layout Boxed - Sidebar Right */
+	html.boxed .sidebar-right {
+		border-top: 3px solid #cccccc;
+		min-height: 0;
+	}
+
+	/* Layout Boxed - Sidebar Right Opened */
+	html.boxed.sidebar-right-opened .body {
+		overflow: hidden;
+	}
+
+	html.boxed.sidebar-right-opened .header {
+		border-radius: 5px 0 0 0;
+	}
+
+	html.boxed.sidebar-right-opened .content-body {
+		border-radius: 0 0 0 5px;
+	}
+
+	html.boxed.sidebar-right-opened .sidebar-right {
+		bottom: 25px;
+		position: absolute;
+		top: 25px;
+	}
+
+}
+
+
+
+			/*
+--------------------------------------------------------------------------------------------
+			********************** MIN WIDTH 768PX AND MAX-WIDTH 1365PX
+--------------------------------------------------------------------------------------------
+			*/
+/* Resolution gt 767 and lt 1366 - Hide Inner Menu */
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+	html.fixed .inner-menu,
+	html.scroll .inner-menu,
+	html.boxed .inner-menu {
+		display: none;
+	}
+
+	html.fixed .inner-menu-toggle,
+	html.scroll .inner-menu-toggle,
+	html.boxed .inner-menu-toggle {
+		display: block;
+	}
+
+	html.fixed .inner-body,
+	html.scroll .inner-body,
+	html.boxed .inner-body {
+		margin-left: 0;
+	}
+
+	html.fixed .content-with-menu-has-toolbar .inner-toolbar,
+	html.scroll .content-with-menu-has-toolbar .inner-toolbar,
+	html.boxed .content-with-menu-has-toolbar .inner-toolbar {
+		padding-left: 140px;
+	}
+
+	html.fixed.inner-menu-opened .inner-menu,
+	html.scroll.inner-menu-opened .inner-menu,
+	html.boxed.inner-menu-opened .inner-menu {
+		display: block;
+	}
+
+	html.fixed.inner-menu-opened .inner-menu-toggle,
+	html.scroll.inner-menu-opened .inner-menu-toggle,
+	html.boxed.inner-menu-opened .inner-menu-toggle {
+		display: none;
+	}
+
+	html.fixed.inner-menu-opened .inner-body,
+	html.scroll.inner-menu-opened .inner-body,
+	html.boxed.inner-menu-opened .inner-body {
+		margin-right: -300px;
+	}
+
+	html.fixed.inner-menu-opened .content-with-menu-has-toolbar .inner-toolbar,
+	html.scroll.inner-menu-opened .content-with-menu-has-toolbar .inner-toolbar,
+	html.boxed.inner-menu-opened .content-with-menu-has-toolbar .inner-toolbar {
+		padding-left: 0;
+	}
+
+	html.fixed.inner-menu-opened .inner-body {
+		margin-left: 300px;
+	}
+
+	html.scroll .content-with-menu:before,
+	html.boxed .content-with-menu:before {
+		display: none;
+	}
+
+	html.scroll.inner-menu-opened:before,
+	html.boxed.inner-menu-opened:before {
+		display: block;
+	}
+	/* Toolbar - Responsive */
+	.inner-toolbar {
+		padding: 0 15px;
+		margin: -40px -15px 30px;
+	}
+
+	.inner-toolbar ul > li {
+		border-right: 0;
+	}
+
+	.inner-toolbar ul > li:first-child {
+		padding-left: 0;
+	}
+
+	.inner-toolbar ul > li.right {
+		float: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+			/*
+--------------------------------------------------------------------------------------------
+			********************** MIN WIDTH 1366PX 
+--------------------------------------------------------------------------------------------
+			*/
+
+/* Resolution gt 1366 - Show Inner Menu */
+@media only screen and (min-width: 1366px) {
+	html.fixed .inner-menu,
+	html.scroll .inner-menu,
+	html.boxed .inner-menu {
+		display: block;
+	}
+
+	html.fixed .inner-menu-toggle,
+	html.fixed .inner-menu-toggle-inside,
+	html.scroll .inner-menu-toggle,
+	html.scroll .inner-menu-toggle-inside,
+	html.boxed .inner-menu-toggle,
+	html.boxed .inner-menu-toggle-inside {
+		display: none;
+	}
+
+	html.fixed .inner-body,
+	html.scroll .inner-body,
+	html.boxed .inner-body {
+		margin-right: 0;
+	}
+
+	html.fixed .content-with-menu-has-toolbar .inner-toolbar,
+	html.scroll .content-with-menu-has-toolbar .inner-toolbar,
+	html.boxed .content-with-menu-has-toolbar .inner-toolbar {
+		padding-left: 0;
+	}
+
+	html.fixed.inner-menu-opened .inner-body {
+		margin-left: 300px;
+	}
+
+	html.fixed .content-with-menu .inner-toolbar,
+	html.fixed.inner-menu-opened .content-with-menu .inner-toolbar {
+		left: 600px;
+	}
+
+	html.fixed .inner-menu-toggle,
+	html.fixed .inner-menu,
+	html.fixed.inner-menu-opened .inner-menu-toggle,
+	html.fixed.inner-menu-opened .inner-menu {
+		left: 300px;
+	}
+
+	html.fixed.sidebar-right-opened .content-with-menu .inner-toolbar {
+		left: 300px;
+	}
+
+	html.fixed.sidebar-right-opened .inner-menu,
+	html.fixed.sidebar-right-opened .inner-menu-toggle {
+		left: 0px;
+	}
+
+	html.fixed.sidebar-left-collapsed .content-with-menu .inner-toolbar,
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .content-with-menu .inner-toolbar,
+	html.fixed.sidebar-left-collapsed.inner-menu-opened .content-with-menu .inner-toolbar {
+		left: 373px;
+	}
+
+	html.fixed.sidebar-left-collapsed .inner-menu-toggle,
+	html.fixed.sidebar-left-collapsed .inner-menu,
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .inner-menu,
+	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-menu {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened .content-with-menu .inner-toolbar {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened .inner-menu,
+	html.fixed.sidebar-left-collapsed.sidebar-right-opened .inner-menu-toggle {
+		left: -227px;
+	}
+	/* Resolution gt 1366 - Show Inner Menu */
+	html.fixed.sidebar-left-sm .content-with-menu .inner-toolbar,
+	html.fixed.sidebar-left-sm.inner-menu-opened .content-with-menu .inner-toolbar {
+		left: 550px;
+	}
+
+	html.fixed.sidebar-left-sm .inner-menu-toggle,
+	html.fixed.sidebar-left-sm .inner-menu,
+	html.fixed.sidebar-left-sm.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-sm.inner-menu-opened .inner-menu {
+		left: 250px;
+	}
+
+	html.fixed.sidebar-left-sm.sidebar-right-opened .content-with-menu .inner-toolbar {
+		left: 250px;
+	}
+
+	html.fixed.sidebar-left-sm.sidebar-right-opened .inner-menu,
+	html.fixed.sidebar-left-sm.sidebar-right-opened .inner-menu-toggle {
+		left: -50px;
+	}
+
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed .content-with-menu .inner-toolbar,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .content-with-menu .inner-toolbar,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.inner-menu-opened .content-with-menu .inner-toolbar {
+		left: 373px;
+	}
+
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed .inner-menu-toggle,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed .inner-menu,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .inner-menu,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.inner-menu-opened .inner-menu {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.sidebar-right-opened .content-with-menu .inner-toolbar {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.sidebar-right-opened .inner-menu,
+	html.fixed.sidebar-left-sm.sidebar-left-collapsed.sidebar-right-opened .inner-menu-toggle {
+		left: -227px;
+	}
+}
+
+
+			/*
+--------------------------------------------------------------------------------------------
+			********************** MIN WIDTH 1200PX AND MAX-WIDTH 1599PX
+--------------------------------------------------------------------------------------------
+			*/
+@media (min-width: 1200px) and (max-width: 1599px) {
+	html.scroll .visible-lg,
+	html.fixed .visible-lg {
+		display: block !important;
+	}
+
+	html.scroll table.visible-lg,
+	html.fixed table.visible-lg {
+		display: table;
+	}
+
+	html.scroll tr.visible-lg,
+	html.fixed tr.visible-lg {
+		display: table-row !important;
+	}
+
+	html.scroll th.visible-lg,
+	html.scroll td.visible-lg,
+	html.fixed th.visible-lg,
+	html.fixed td.visible-lg {
+		display: table-cell !important;
+	}
+
+	html.scroll .visible-lg-block,
+	html.fixed .visible-lg-block {
+		display: block !important;
+	}
+
+	html.scroll .visible-lg-inline,
+	html.fixed .visible-lg-inline {
+		display: inline !important;
+	}
+
+	html.scroll .visible-lg-inline-block,
+	html.fixed .visible-lg-inline-block {
+		display: inline-block !important;
+	}
+
+	html.scroll .hidden-lg,
+	html.fixed .hidden-lg {
+		display: none !important;
+	}
+
+}
+
+			/*
+--------------------------------------------------------------------------------------------
+			********************** MIN WIDTH 1600PX
+--------------------------------------------------------------------------------------------
+			*/
+@media (min-width: 1600px) {
+	html.scroll .container,
+	html.fixed .container {
+		width: 1570px;
+	}
+
+	html.scroll .col-xl-1, html.scroll .col-xl-2, html.scroll .col-xl-3, html.scroll .col-xl-4, html.scroll .col-xl-5, html.scroll .col-xl-6, html.scroll .col-xl-7, html.scroll .col-xl-8, html.scroll .col-xl-9, html.scroll .col-xl-10, html.scroll .col-xl-11, html.scroll .col-xl-12,
+	html.fixed .col-xl-1,
+	html.fixed .col-xl-2,
+	html.fixed .col-xl-3,
+	html.fixed .col-xl-4,
+	html.fixed .col-xl-5,
+	html.fixed .col-xl-6,
+	html.fixed .col-xl-7,
+	html.fixed .col-xl-8,
+	html.fixed .col-xl-9,
+	html.fixed .col-xl-10,
+	html.fixed .col-xl-11,
+	html.fixed .col-xl-12 {
+		float: left;
+	}
+
+	html.scroll .col-xl-12,
+	html.fixed .col-xl-12 {
+		width: 100%;
+	}
+
+	html.scroll .col-xl-11,
+	html.fixed .col-xl-11 {
+		width: 91.66666667%;
+	}
+
+	html.scroll .col-xl-10,
+	html.fixed .col-xl-10 {
+		width: 83.33333333%;
+	}
+
+	html.scroll .col-xl-9,
+	html.fixed .col-xl-9 {
+		width: 75%;
+	}
+
+	html.scroll .col-xl-8,
+	html.fixed .col-xl-8 {
+		width: 66.66666667%;
+	}
+
+	html.scroll .col-xl-7,
+	html.fixed .col-xl-7 {
+		width: 58.33333333%;
+	}
+
+	html.scroll .col-xl-6,
+	html.fixed .col-xl-6 {
+		width: 50%;
+	}
+
+	html.scroll .col-xl-5,
+	html.fixed .col-xl-5 {
+		width: 41.66666667%;
+	}
+
+	html.scroll .col-xl-4,
+	html.fixed .col-xl-4 {
+		width: 33.33333333%;
+	}
+
+	html.scroll .col-xl-3,
+	html.fixed .col-xl-3 {
+		width: 25%;
+	}
+
+	html.scroll .col-xl-2,
+	html.fixed .col-xl-2 {
+		width: 16.66666667%;
+	}
+
+	html.scroll .col-xl-1,
+	html.fixed .col-xl-1 {
+		width: 8.33333333%;
+	}
+
+	html.scroll .col-xl-pull-12,
+	html.fixed .col-xl-pull-12 {
+		right: 100%;
+	}
+
+	html.scroll .col-xl-pull-11,
+	html.fixed .col-xl-pull-11 {
+		right: 91.66666667%;
+	}
+
+	html.scroll .col-xl-pull-10,
+	html.fixed .col-xl-pull-10 {
+		right: 83.33333333%;
+	}
+
+	html.scroll .col-xl-pull-9,
+	html.fixed .col-xl-pull-9 {
+		right: 75%;
+	}
+
+	html.scroll .col-xl-pull-8,
+	html.fixed .col-xl-pull-8 {
+		right: 66.66666667%;
+	}
+
+	html.scroll .col-xl-pull-7,
+	html.fixed .col-xl-pull-7 {
+		right: 58.33333333%;
+	}
+
+	html.scroll .col-xl-pull-6,
+	html.fixed .col-xl-pull-6 {
+		right: 50%;
+	}
+
+	html.scroll .col-xl-pull-5,
+	html.fixed .col-xl-pull-5 {
+		right: 41.66666667%;
+	}
+
+	html.scroll .col-xl-pull-4,
+	html.fixed .col-xl-pull-4 {
+		right: 33.33333333%;
+	}
+
+	html.scroll .col-xl-pull-3,
+	html.fixed .col-xl-pull-3 {
+		right: 25%;
+	}
+
+	html.scroll .col-xl-pull-2,
+	html.fixed .col-xl-pull-2 {
+		right: 16.66666667%;
+	}
+
+	html.scroll .col-xl-pull-1,
+	html.fixed .col-xl-pull-1 {
+		right: 8.33333333%;
+	}
+
+	html.scroll .col-xl-pull-0,
+	html.fixed .col-xl-pull-0 {
+		right: auto;
+	}
+
+	html.scroll .col-xl-push-12,
+	html.fixed .col-xl-push-12 {
+		left: 100%;
+	}
+
+	html.scroll .col-xl-push-11,
+	html.fixed .col-xl-push-11 {
+		left: 91.66666667%;
+	}
+
+	html.scroll .col-xl-push-10,
+	html.fixed .col-xl-push-10 {
+		left: 83.33333333%;
+	}
+
+	html.scroll .col-xl-push-9,
+	html.fixed .col-xl-push-9 {
+		left: 75%;
+	}
+
+	html.scroll .col-xl-push-8,
+	html.fixed .col-xl-push-8 {
+		left: 66.66666667%;
+	}
+
+	html.scroll .col-xl-push-7,
+	html.fixed .col-xl-push-7 {
+		left: 58.33333333%;
+	}
+
+	html.scroll .col-xl-push-6,
+	html.fixed .col-xl-push-6 {
+		left: 50%;
+	}
+
+	html.scroll .col-xl-push-5,
+	html.fixed .col-xl-push-5 {
+		left: 41.66666667%;
+	}
+
+	html.scroll .col-xl-push-4,
+	html.fixed .col-xl-push-4 {
+		left: 33.33333333%;
+	}
+
+	html.scroll .col-xl-push-3,
+	html.fixed .col-xl-push-3 {
+		left: 25%;
+	}
+
+	html.scroll .col-xl-push-2,
+	html.fixed .col-xl-push-2 {
+		left: 16.66666667%;
+	}
+
+	html.scroll .col-xl-push-1,
+	html.fixed .col-xl-push-1 {
+		left: 8.33333333%;
+	}
+
+	html.scroll .col-xl-push-0,
+	html.fixed .col-xl-push-0 {
+		left: auto;
+	}
+
+	html.scroll .col-xl-offset-12,
+	html.fixed .col-xl-offset-12 {
+		margin-left: 100%;
+	}
+
+	html.scroll .col-xl-offset-11,
+	html.fixed .col-xl-offset-11 {
+		margin-left: 91.66666667%;
+	}
+
+	html.scroll .col-xl-offset-10,
+	html.fixed .col-xl-offset-10 {
+		margin-left: 83.33333333%;
+	}
+
+	html.scroll .col-xl-offset-9,
+	html.fixed .col-xl-offset-9 {
+		margin-left: 75%;
+	}
+
+	html.scroll .col-xl-offset-8,
+	html.fixed .col-xl-offset-8 {
+		margin-left: 66.66666667%;
+	}
+
+	html.scroll .col-xl-offset-7,
+	html.fixed .col-xl-offset-7 {
+		margin-left: 58.33333333%;
+	}
+
+	html.scroll .col-xl-offset-6,
+	html.fixed .col-xl-offset-6 {
+		margin-left: 50%;
+	}
+
+	html.scroll .col-xl-offset-5,
+	html.fixed .col-xl-offset-5 {
+		margin-left: 41.66666667%;
+	}
+
+	html.scroll .col-xl-offset-4,
+	html.fixed .col-xl-offset-4 {
+		margin-left: 33.33333333%;
+	}
+
+	html.scroll .col-xl-offset-3,
+	html.fixed .col-xl-offset-3 {
+		margin-left: 25%;
+	}
+
+	html.scroll .col-xl-offset-2,
+	html.fixed .col-xl-offset-2 {
+		margin-left: 16.66666667%;
+	}
+
+	html.scroll .col-xl-offset-1,
+	html.fixed .col-xl-offset-1 {
+		margin-left: 8.33333333%;
+	}
+
+	html.scroll .col-xl-offset-0,
+	html.fixed .col-xl-offset-0 {
+		margin-left: 0;
+	}
+
+	html.scroll .visible-lg-block,
+	html.fixed .visible-lg-block {
+		display: none !important;
+	}
+
+	html.scroll .visible-lg-inline,
+	html.fixed .visible-lg-inline {
+		display: none !important;
+	}
+
+	html.scroll .visible-lg-inline-block,
+	html.fixed .visible-lg-inline-block {
+		display: none !important;
+	}
+	html.scroll .visible-xl,
+	html.fixed .visible-xl {
+		display: block !important;
+	}
+
+	html.scroll table.visible-xl,
+	html.fixed table.visible-xl {
+		display: table;
+	}
+
+	html.scroll tr.visible-xl,
+	html.fixed tr.visible-xl {
+		display: table-row !important;
+	}
+
+	html.scroll th.visible-xl,
+	html.scroll td.visible-xl,
+	html.fixed th.visible-xl,
+	html.fixed td.visible-xl {
+		display: table-cell !important;
+	}
+
+	html.scroll .visible-xl-block,
+	html.fixed .visible-xl-block {
+		display: block !important;
+	}
+
+	html.scroll .visible-xl-inline,
+	html.fixed .visible-xl-inline {
+		display: inline !important;
+	}
+
+	html.scroll .visible-xl-inline-block,
+	html.fixed .visible-xl-inline-block {
+		display: inline-block !important;
+	}
+
+	html.scroll .hidden-xl,
+	html.fixed .hidden-xl {
+		display: none !important;
+	}
+	/* Resolution gt 1366 - Show Inner Menu */
+	html.fixed.sidebar-left-xs .content-with-menu .inner-toolbar,
+	html.fixed.sidebar-left-xs.inner-menu-opened .content-with-menu .inner-toolbar {
+		left: 500px;
+	}
+
+	html.fixed.sidebar-left-xs .inner-menu-toggle,
+	html.fixed.sidebar-left-xs .inner-menu,
+	html.fixed.sidebar-left-xs.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-xs.inner-menu-opened .inner-menu {
+		left: 200px;
+	}
+
+	html.fixed.sidebar-left-xs.sidebar-right-opened .content-with-menu .inner-toolbar {
+		left: 200px;
+	}
+
+	html.fixed.sidebar-left-xs.sidebar-right-opened .inner-menu,
+	html.fixed.sidebar-left-xs.sidebar-right-opened .inner-menu-toggle {
+		left: -100px;
+	}
+
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed .content-with-menu .inner-toolbar,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .content-with-menu .inner-toolbar,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.inner-menu-opened .content-with-menu .inner-toolbar {
+		left: 373px;
+	}
+
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed .inner-menu-toggle,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed .inner-menu,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .inner-menu,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.inner-menu-opened .inner-menu-toggle,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.inner-menu-opened .inner-menu {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.sidebar-right-opened .content-with-menu .inner-toolbar {
+		left: 73px;
+	}
+
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.sidebar-right-opened .inner-menu,
+	html.fixed.sidebar-left-xs.sidebar-left-collapsed.sidebar-right-opened .inner-menu-toggle {
+		left: -227px;
+	}
+	html.fixed .inner-menu .nano {
+		position: static;
+		height: auto;
+		overflow: visible;
+		width: auto;
+	}
+
+	html.fixed .inner-menu .nano .nano-content {
+		margin-right: 0;
+		position: static;
+		overflow: visible;
+	}
+}
+
+
+			/*
+--------------------------------------------------------------------------------------------
+			********************** MAX WIDTH 991PX
+--------------------------------------------------------------------------------------------
+			*/
+@media screen and (max-width: 991px) {
+	.table-responsive {
+		width: 100%;
+		margin-bottom: 15px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		border: 1px solid #ddd;
+	}
+
+	.table-responsive > .table {
+		margin-bottom: 0;
+	}
+
+	.table-responsive > .table > thead > tr > th,
+	.table-responsive > .table > tbody > tr > th,
+	.table-responsive > .table > tfoot > tr > th,
+	.table-responsive > .table > thead > tr > td,
+	.table-responsive > .table > tbody > tr > td,
+	.table-responsive > .table > tfoot > tr > td {
+		white-space: nowrap;
+	}
+
+	.table-responsive > .table-bordered {
+		border: 0;
+	}
+
+	.table-responsive > .table-bordered > thead > tr > th:first-child,
+	.table-responsive > .table-bordered > tbody > tr > th:first-child,
+	.table-responsive > .table-bordered > tfoot > tr > th:first-child,
+	.table-responsive > .table-bordered > thead > tr > td:first-child,
+	.table-responsive > .table-bordered > tbody > tr > td:first-child,
+	.table-responsive > .table-bordered > tfoot > tr > td:first-child {
+		border-left: 0;
+	}
+
+	.table-responsive > .table-bordered > thead > tr > th:last-child,
+	.table-responsive > .table-bordered > tbody > tr > th:last-child,
+	.table-responsive > .table-bordered > tfoot > tr > th:last-child,
+	.table-responsive > .table-bordered > thead > tr > td:last-child,
+	.table-responsive > .table-bordered > tbody > tr > td:last-child,
+	.table-responsive > .table-bordered > tfoot > tr > td:last-child {
+		border-right: 0;
+	}
+
+	.table-responsive > .table-bordered > tbody > tr:last-child > th,
+	.table-responsive > .table-bordered > tfoot > tr:last-child > th,
+	.table-responsive > .table-bordered > tbody > tr:last-child > td,
+	.table-responsive > .table-bordered > tfoot > tr:last-child > td {
+		border-bottom: 0;
+	}
+}
+
+
+			/*
+--------------------------------------------------------------------------------------------
+			********************** MAX WIDTH 991PX
+--------------------------------------------------------------------------------------------
+			*/
+
+@media only screen and (max-width: 991px) {
+	/* Tables - No More Tables technique (991px is the bootstrap SM max-width) */
+	.table.table-no-more,
+	.table.table-no-more thead,
+	.table.table-no-more tbody,
+	.table.table-no-more tr,
+	.table.table-no-more th,
+	.table.table-no-more td {
+		display: block;
+	}
+
+	.table.table-no-more thead tr {
+		left: -9999px;
+		position: absolute;
+		top: -9999px;
+	}
+
+	.table.table-no-more tr {
+		border-bottom: 1px solid #DDD;
+	}
+
+	.table.table-no-more td {
+		border: none;
+		position: relative;
+		padding-left: 50%;
+		text-align: left;
+		white-space: normal;
+	}
+
+	.table.table-no-more td:before {
+		content: attr(data-title);
+		font-weight: bold;
+		left: 6px;
+		padding-right: 10px;
+		position: absolute;
+		text-align: left;
+		top: 8px;
+		white-space: nowrap;
+		width: 45%;
+	}
+
+	.table.table-no-more.table-bordered td {
+		border-bottom: 1px solid #EFEFEF;
+	}
+
+	.table.table-no-more.table-condensed td:before {
+		top: 5px;
+	}
+	html.dark .table-responsive {
+		border-color: #262b33;
+	}
+	html.dark .table.table-no-more tr,
+	html.dark .table.table-no-more.table-bordered td {
+		border-bottom-color: #262b33;
+	}
+	.dataTables_wrapper .dataTables_length {
+		margin-bottom: 15px;
+	}
+
+	.dataTables_wrapper .dataTables_length label {
+		float: none;
+		width: 100%;
+	}
+	.dataTables_wrapper .dataTables_filter label {
+		width: 100%;
+	}
+	.dataTables_wrapper .datatables-footer .dataTables_info {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.dataTables_wrapper .datatables-footer .dataTables_paginate {
+		float: none;
+		text-align: center;
+	}
+
+	.dataTables_wrapper .datatables-footer .dataTables_paginate .pagination {
+		display: inline-block;
+	}
+	.dataTables_processing {
+		left: auto;
+		margin-left: 0;
+		right: 0;
+	}
+}
+
+/* Locked Screen - Responsive Landscape */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+	.body-locked .panel-sign, .body-locked.body-locked-inline .panel-sign {
+		padding-top: 0;
+	}
+	.body-locked .center-sign, .body-locked.body-locked-inline .center-sign {
+		padding-top: 0;
+	}
+	.body-locked .center-sign .current-user, .body-locked.body-locked-inline .center-sign .current-user {
+		margin-bottom: 45px;
+		margin-left: 100px;
+		margin-top: 10px;
+	}
+	.body-locked .center-sign .current-user .user-image, .body-locked.body-locked-inline .center-sign .current-user .user-image {
+		height: 100px;
+		left: 35px;
+		margin-left: 0;
+		margin-top: 0;
+		top: 15px;
+		width: 100px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.fc .fc-header-right .btn-group {
+		margin: 10px 0;
+	}
+	.fc .fc-header-right br.hidden {
+		display: block !important;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.fc .fc-header-left,
+	.fc .fc-header-right {
+		display: block;
+		width: 100%;
+	}
+	.fc .fc-header-right {
+		padding: 0 0 15px;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.fc {
+		margin-bottom: 30px;
+	}
+}
